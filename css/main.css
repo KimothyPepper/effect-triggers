@@ -37,6 +37,10 @@ div {
   opacity: 0;
 }
 
+.show {
+  opacity: 1;
+}
+
 .diamond {
   height: 80px;
   right: -100px;
@@ -45,6 +49,19 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+}
+
+.slide {
+  right: 100px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-150px,0);
+  }
 }
 
 .panel {
@@ -64,6 +81,12 @@ div {
   margin: 0;
   padding: 3rem 0;
 }
+
+.collapse {
+  max-height: 0;
+}
+
+
 
 .circle {
   height: 100px;
