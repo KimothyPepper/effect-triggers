@@ -14,10 +14,10 @@ $('.btn-bounce').on('click', function () {
   $('.circle').addClass('bounce');
 });
 
-$('.circle').on('click', function () {
+$('.circle').on('animationed', function () {
   $('.circle').removeClass('bounce');
 });
 
 $('.btn-append').on('click', function () {
-  $('.list').removeClass('<li>New List Item</li>');
+  $('.list').append('<li>New List Item</li>');
 });
